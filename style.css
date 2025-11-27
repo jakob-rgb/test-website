@@ -1,38 +1,96 @@
-#pro{
-    color: #717735;
+<!-- style.css -->
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
 }
-h1{
-    width: 55px;
-    font-weight: bold;
-    font-family: "Montserrat", Arial, sans-serif;
-    display:inline-block ;
-    text-align: center;
-    
-}
-.rotate360{
-    animation: moveAndRotate360 3s linear 3;
 
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@keyframes moveAndRotate360{
-    from {
-        transform: translateX(0)rotate(0deg);
-    }
-    to{
-        transform: translateX(100px) rotate(360deg);
-    }
-}
-.list{
-    list-style: none;
-    display: inline-block;
-    margin:0;
-    padding:0;
-    border-radius: 10px 0px 15px;
-    border: 2px solid;
-    color: aqua;
 
+.welcome-card {
+  background: #111;
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
 }
-li{
-    display: inline-block;
-    margin-right: 10px;
-    color: blue;
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: orange;
 }
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: orange;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  padding: 80px;
+  text-align: center;
+  background: linear-gradient(#000, #111);
+}
+
+.products .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #1b1b1b;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: orange;
+  transform: scale(1.05);
+}
+</style>
