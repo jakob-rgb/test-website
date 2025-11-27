@@ -1,27 +1,50 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucré Cristallisé — Accueil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="rotate360">Web et Disign</h1><ul>
-            <li class="list">Acceuil</li>
-            <li class="list">Formation</li>
-            <li class="list">Inscription</li>
-            <li class="list">Qui somme vous</li>
-        </ul>
-        <h3 id="pro">PRO</h3>
-    </header>
-    <section>
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-card">
+      <h1 class="logo">Sucré Cristallisé</h1>
+      <p class="subtitle">Pâtisserie Artisanale</p>
+      <input type="text" id="clientName" placeholder="Votre nom...">
+      <button onclick="enterSite()">Entrer</button>
+    </div>
+  </div>
 
-    </section>
-    <aside>
+  <header>
+    <h1 class="logo-small">Sucré Cristallisé</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    </aside>
+  <section id="accueil" class="hero">
+    <h2>Bienvenue <span id="userDisplay"></span></h2>
+    <p>Découvrez l'élégance d'une pâtisserie de luxe au style sombre et raffiné.</p>
+  </section>
+
+  <section id="produits" class="products">
+    <h2>Nos créations</h2>
+    <div class="grid">
+      <div class="card">Macarons Deluxe</div>
+      <div class="card">Gâteau Royal</div>
+      <div class="card">Tarte Rubis</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : contact@sucrecristallise.tn</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
